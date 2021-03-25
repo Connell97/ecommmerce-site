@@ -1,11 +1,12 @@
 import React from 'react'
-import './Smartwatches.css'
+import './Categories.css'
+import CategoryPage from '../Categories'
 
 const Smartwatches = () => {
-    return(
-        <>
-        </>
-    )
-}
-
-export default Smartwatches;
+    <>
+      <CategoryPage/>
+    </>
+  
+  
+  }
+  export default Smartwatches;

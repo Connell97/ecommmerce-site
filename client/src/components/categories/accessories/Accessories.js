@@ -1,11 +1,12 @@
 import React from 'react'
-import './Accessories.css'
+import './Categories.css'
+import CategoryPage from '../Categories'
 
 const Accessories = () => {
-    return(
-        <>
-        </>
-    )
-}
-
-export default Accessories;
+    <>
+      <CategoryPage/>
+    </>
+  
+  
+  }
+  export default Accessories;

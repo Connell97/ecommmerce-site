@@ -1,11 +1,12 @@
 import React from 'react'
-import './Laptops.css'
+import './Categories.css'
+import CategoryPage from '../Categories'
 
 const Laptops = () => {
-    return(
-        <>
-        </>
-    )
-}
+  <>
+    <CategoryPage/>
+  </>
 
+
+}
 export default Laptops;

@@ -1,11 +1,12 @@
 import React from 'react'
-import './Desktops.css'
+import './Categories.css'
+import CategoryPage from '../Categories'
 
 const Desktops = () => {
-    return(
-        <>
-        </>
-    )
-}
-
-export default Desktops;
+    <>
+      <CategoryPage/>
+    </>
+  
+  
+  }
+  export default Desktops;
