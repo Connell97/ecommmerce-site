@@ -14,6 +14,7 @@
     justify-content: center;
     font-size: 22px;
     font-weight: 500;
+
 }
 
 .basket-right{
@@ -24,7 +25,7 @@
     justify-content: flex-end;
 }
 
-.basket-submit{
+.input[type="Submit"], button{
     appearance: none;
     background: none;
     border: none;
@@ -95,7 +96,7 @@
     border-radius: 14px;
 }
 
-.form .form-inner3 .basket-submit{
+.form .form-inner3 .input[type="submit"]{
     display: inline-block;
     padding: 10px 15px;
     border-radius: 14px;
@@ -108,6 +109,6 @@
     font-weight: 700;
 }
 
-.form .form-inner3 .basket-submit:hover{
+.form .form-inner3 .input[type="submit"]:hover{
     background-position: 100% 0%;
 }

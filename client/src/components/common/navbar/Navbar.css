@@ -79,3 +79,9 @@
     width: 1px;
     display: block;
   }
+
+  .Lower-Upper-Navbar { 
+    display: flex;
+    list-style-type: none;
+    box-sizing: border-box;
+}

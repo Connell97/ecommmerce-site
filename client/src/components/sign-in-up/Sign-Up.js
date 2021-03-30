@@ -13,14 +13,14 @@ const SignUp = () => {
                         <h2>Login</h2>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
-                            <input className="signup-input" type="text" name="email" id="email"/>
+                            <input type="text" name="email" id="email"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="password">Password</label>
-                            <input className="signup-input" type="password" name="password" id="password"/>
+                            <input type="password" name="password" id="password"/>
                         </div>
                         {!show?
-                        <input className="signup-submit" type="submit" value="SUBMIT"/>
+                        <input className="submit-button" type="submit" value="SUBMIT"/>
                         :null}
                         <br/>
                         <br/>
@@ -35,29 +35,29 @@ const SignUp = () => {
                     <div className="part2">
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
-                            <input className="signup-input" type="text" name="name" id="name"/>
+                            <input type="text" name="name" id="name"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="address1">First Line of Address</label>
-                            <input className="signup-input" type="text" name="address1" id="address1"/>
+                            <input type="text" name="address1" id="address1"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="address2">Second Line of Address</label>
-                            <input className="signup-input" type="text" name="address2" id="address2"/>
+                            <input type="text" name="address2" id="address2"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="postcode">Postcode</label>
-                            <input className="signup-input" type="text" name="postcode" id="postcode"/>
+                            <input type="text" name="postcode" id="postcode"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="city">City</label>
-                            <input className="signup-input" type="text" name="city" id="city"/>
+                            <input type="text" name="city" id="city"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="country">Country</label>
-                            <input className="signup-input" type="text" name="country" id="country"/>
+                            <input type="text" name="country" id="country"/>
                         </div>
-                        <input className="signup-submit" type="submit" value="CREATE ACCOUNT"/>
+                        <input type="submit" value="CREATE ACCOUNT"/>
                     </div>
                     : null
                     }
