@@ -46,6 +46,6 @@ app.use(productRouter);
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log('Listening on port 3001')
 });
