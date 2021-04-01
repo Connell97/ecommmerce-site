@@ -6,6 +6,7 @@ const session = require("express-session");
 const MongoStore = require('connect-mongo');
 const cors = require('cors');
 const { nanoid } = require("nanoid");
+const path = require('path');
 
 //import routes
 
@@ -26,6 +27,8 @@ maxAge: 1000 * 60 * 60 * 2,
 sameSite: true }, 
 }));
 
+app.use(express.static(path.join(__dirname, 'build')));
+
 mongoose.connect('mongodb+srv://nisha:passwordabc123@cluster0.kstue.mongodb.net/myShopingCart?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true
@@ -40,7 +43,9 @@ app.use(bodyParser.json());
 app.use(AccountRouter);
 app.use('/user', userSignup);
 app.use(productRouter);
-
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+})
 app.listen(3001, () => {
     console.log('Listening on port 3001')
 });
